@@ -19,6 +19,9 @@ public class BlogViewController {
 
     private final BlogService blogService;
 
+    /**
+     * 글목록 화면
+     */
     @GetMapping("/articles")
     public String getArticles(Model model){
         List<ArticleListViewResponse> articles = blogService.findAll().stream()
@@ -28,8 +31,10 @@ public class BlogViewController {
 
         return "articleList";
     }
-
-    @GetMapping("/article/{id}")
+    /**
+     * 글 세부내용 화면
+     */
+    @GetMapping("/articles/{id}")
     public String getArticle(@PathVariable long id, Model model){
         Article article = blogService.findById(id);
         model.addAttribute("article",new ArticleViewResponse(article));
@@ -37,6 +42,9 @@ public class BlogViewController {
         return "article";
     }
 
+    /**
+     * 글 작성 또는 수정 화면
+     */
     @GetMapping("/new-article")
     // id는 없을 수도 있다고 명시
     public String newArticle(@RequestParam(required = false) Long id, Model model){

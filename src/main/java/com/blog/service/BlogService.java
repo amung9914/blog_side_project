@@ -5,6 +5,7 @@ import com.blog.dto.AddArticleRequest;
 import com.blog.dto.UpdateArticleRequest;
 import com.blog.repository.BlogRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,7 +23,7 @@ public class BlogService {
     }
 
     public List<Article> findAll(){
-        return blogRepository.findAll();
+        return blogRepository.findAll(Sort.by(Sort.Direction.DESC,"id"));
     }
 
     public Article findById(long id){

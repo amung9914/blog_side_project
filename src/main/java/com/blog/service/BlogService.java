@@ -53,6 +53,4 @@ public class BlogService {
             throw new IllegalArgumentException("not authorized");
         }
     }
-
-
 }

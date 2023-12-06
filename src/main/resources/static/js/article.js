@@ -43,9 +43,10 @@ if(modifyButton){
 const createButton = document.getElementById('create-btn');
 if(createButton){
     createButton.addEventListener('click',event => {
+        let content = editor.getHTML();
         body = JSON.stringify({
             title: document.getElementById("title").value,
-            content: document.getElementById("content").value,
+            content: content,
         });
         function success(){
             alert("등록 완료되었습니다.");

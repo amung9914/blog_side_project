@@ -22,11 +22,9 @@
                          th:text="|Posted on ${#temporals.format(article.createdAt,'yyyy-MM-dd HH:mm')} By ${article.author}|">
                     </div>
                     <!-- 날짜형식을 포매팅하는 함수 ${#temporals.format()} -->
-                    <div class="text-muted fst-italic mb-2"
-                         th:text="|Posted on ${#temporals.format(article.createdAt,'yyyy-MM-dd HH:mm')}|"></div>
                 </header>
                 <section class="mb-5">
-                    <p class="fs-5 mb-4" th:text="${article.content}"></p>
+                    <p class="fs-5 mb-4" th:utext="${article.content}"></p>
                 </section>
                 <button type="button" id="modify-btn"
                         th:onclick="|location.href='@{/new-article?id={articleId}(articleId=${article.id})}'|" class="btn btn-dark btn-sm">수정</button>
@@ -37,5 +35,6 @@
 
 </div>
 <script src="/js/article.js"></script>
+
 </body>
 </html>

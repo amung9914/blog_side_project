@@ -1,3 +1,4 @@
+/* 폼로그인 방식 설정파일이라서 주석처리함.
 package com.blog.config;
 
 import com.blog.service.UserDetailService;
@@ -60,3 +61,6 @@ public class WebSecurityConfig {
 
 
 }
+
+*/
+

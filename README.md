@@ -5,6 +5,10 @@
 나만의 블로그를 제작했습니다. <br/>
 기간 : 2023.11.30 ~ 2023.12.06 약 일주일<br/>
 
+## 시스템 구성도
+![시스템구성도](https://github.com/amung9914/blog_side_project/assets/137124338/650be16d-556b-4e15-81f3-ca0cae79cd0d)
+
+
 ## 🛠 Languages and Tools:
 - Java17
 - Spring Boot v3.2.0

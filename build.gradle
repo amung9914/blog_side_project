@@ -45,8 +45,6 @@ dependencies {
 
 	// https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
 	implementation 'com.mysql:mysql-connector-j'
-
-
 }
 
 tasks.named('test') {

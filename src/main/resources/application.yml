@@ -15,7 +15,7 @@ spring:
         registration:
           google:
             client-id: 6636
-            client-secret:
+            client-secret: SEC
             scope:
               - email
               - profile

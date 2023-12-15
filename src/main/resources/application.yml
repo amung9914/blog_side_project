@@ -22,5 +22,5 @@ spring:
 
 jwt:
   issuer: amung@gmail.com
-  secret_key: study-springboot
+  secret_key: SEC
 

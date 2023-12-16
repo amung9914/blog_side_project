@@ -34,6 +34,9 @@ http://jpatest-env.eba-9wtaszqz.ap-northeast-2.elasticbeanstalk.com/login
 
 ## 📌 구현 기능 : 
 
+### Github Action과 AWS Elastic Beanstalk를 이용한 CI/CD 구현
+Github에 push를 하면 바로 배포될 수 있도록 CI/CD를 구현하였습니다.
+
 ### OAuth2.0를 사용한 구글 로그인
 
 ![image](https://github.com/amung9914/blog_side_project/assets/137124338/e0615efe-43db-45b2-969f-3b6b9ffe523b)
